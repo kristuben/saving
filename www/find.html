@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Find the Perfect Hike! </title>
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script src = "findScript.js"></script>
+<link href = "https://fonts.googleapis.com/css?family=Amatic+SC" rel = 'stylesheet'>
+<link href = "https://fonts.googleapis.com/css?family=Comfortaa" rel = 'stylesheet'>
+<link href = "https://fonts.googleapis.com/css?family=Megrim" rel = 'stylesheet'>
+<link rel="stylesheet" type="text/css" href="find.css">
+</head>
+
+<body>
+
+<ul>
+  <li><a href = home.html> Home </a></li>
+  <li><a href = about.html> About </a></li>
+  <li><a href = find.html> Find </a></li>
+  <li><a href = essentials.html> Essentials </a></li>
+  <li style="float:right"><a href = login.html>Log In/Out</a></li>
+</ul>
+
+<h1>Find the Perfect Hike!</h1>
+
+
+<div id = "element">
+  <h2>Difficulty:</h2>
+  <form align = "center">
+    <div>
+      <select style = "border-radius: 15px" name = "Difficulty" id = "theLevel">
+        <option value = "Easy">Easy</option>
+        <option value = "Moderate">Moderate</option>
+        <option value = "Hard">Hard</option>
+      </select>
+    </div>
+    <!--<input type = "submit">-->
+  </form>
+  <h2>Location:</h2>
+  <form align = "center">
+    <div>
+      <select style = "border-radius: 15px" name = "Locations" id = "theRegion">
+        <option value = "Coastal">Coastal</option>
+        <option value = "Southwest">Southwest</option>
+        <option value = "North Puget Sound">North Puget Sound</option>
+        <option value = "North Central">North Central</option>
+        <option value = "South Central">South Central</option>
+        <option value = "Eastern">Eastern</option>
+      </select>
+    </div>
+  </form>
+  <br>
+</div>
+<button class = "button" onclick = "findHikes()" style = "position: absolute; top:480px; left: 610px">Search</button>
+<br>
+
+</body>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+body {
+    background-image: url("Mt_Rainier.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+h1 {
+  font-size: 700%;
+  color: RGB(255, 255, 255);
+  margin: 130px 300px ;
+  font-family: "Megrim", cursive;
+}
+
+p {
+  font-size: 120%;
+  font-family: "Comfortaa", cursive;
+  color: RGB(255, 255, 255);
+}
+
+#element{
+  margin: 100px 450px;
+  width:400px;
+  color:white;
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+  background-color: rgb(177,156,249);
+  border:white 1px solid;
+  padding:24px;
+  filter:alpha(opacity = 80);
+  -moz-opacity:.8;
+  opacity:.8;
+  border-radius: 15px;
+}
+
+
+ul {
+  font-family: "Comfortaa", cursive;
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 3px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+li a:hover {
+  background-color: rgba(218, 189, 253, 0.4);
+}
+
+li a:active {
+  background-color: rgba(218, 189, 253, 0.4);
+}
+
+
+.button {
+  background-color: rgb(177,156,249);
+  display: inline-block;
+  width: 100px;
+  padding: 10px 12px;
+  color: white;
+  border: 1.5px solid white;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: "Comfortaa", cursive;
+  margin: 4px 2px;
+}
+
+.button:hover,
+.button:active {
+  background-color: rgba(164, 139, 230, 0.7);
+  border-color: rgba(164, 139, 230, 0.8);
+  transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
+  color: white;
+}

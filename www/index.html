@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Take a Hike </title>
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script src = "loginScript.js"></script>
+<link href = "https://fonts.googleapis.com/css?family=Amatic+SC" rel = 'stylesheet'>
+<link href = "https://fonts.googleapis.com/css?family=Comfortaa" rel = 'stylesheet'>
+<link href = "https://fonts.googleapis.com/css?family=Megrim" rel = 'stylesheet'>
+<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+
+  <ul>
+    <li><a href = home.html> Home </a></li>
+    <li><a href = about.html> About </a></li>
+    <li><a href = find.html> Find </a></li>
+    <li><a href = essentials.html> Essentials </a></li>
+    <li style="float:right"><a href = login.html>Log In/Out</a></li>
+  </ul>
+
+  <h1>Take A Hike</h1>
+  <div id = "element">
+    <p>Username:
+    <input style="border-radius: 15px" type="text" id="loadKey"></input></p>
+    <p>Password:
+    <input style="border-radius: 15px" type="password" id="loadVal"></input></p>
+  </div>
+
+    <button onclick="signIn()" class = "button">Log In</button>
+    <br><br>
+    <a  href="create.html" class= "link">Need an account?</a>
+    <p id="loadValue"></p>
+
+  <br>
+
+</body>
+</html>

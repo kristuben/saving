@@ -1,0 +1,108 @@
+body {
+    background-image: url("Mt_Rainier.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+h1 {
+  font-size: 500%;
+  color: white;
+  margin: 40px 300px ;
+  font-family: "Megrim", cursive;
+}
+
+p {
+  font-size: 150%;
+  font-family: "Comfortaa", cursive;
+  color: white;
+}
+
+a {
+  font-family: "Comfortaa", cursive;
+  color: white;
+}
+
+#element{
+  margin: 10px 465px;
+  width:350px;
+  color:white;
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+  background-color: rgba(177, 156, 249, .85);
+  border:white 1px solid;
+  padding:24px;
+  /*filter:alpha(opacity = 80);
+  -moz-opacity:.8;
+  opacity:.8;*/
+  border-radius: 15px;
+}
+
+ul {
+  font-family: "Comfortaa", cursive;
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 3px;
+}
+
+.link:hover,
+.link:active{
+  transition: color 0.3s ease-in, border-color 0.3s ease-in;
+  color: rgba(95, 126, 253, 0.9);
+}
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+li a:hover {
+  background-color: rgba(218, 189, 253, 0.4);
+}
+
+li a:active {
+  background-color: rgba(218, 189, 253, 0.4);
+}
+
+
+.button {
+  background-color: transparent;
+  display: inline-block;
+  width: 180px;
+  padding: 15px 18px;
+  color: white;
+  border: 1.5px solid white;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: "Comfortaa", cursive;
+  margin: 4px 2px;
+}
+
+.button:hover,
+.button:active {
+  background-color: rgba(95, 126, 253, 0.8);
+  border-color: rgba(95, 126, 253, 0.9);
+  color: rgba(255, 255, 255, 0.9);
+  transition: background-color 0.3s ease-in, border-color 0.3s ease-in, color 0.3s ease-in;
+}
