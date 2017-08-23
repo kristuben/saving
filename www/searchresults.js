@@ -71,28 +71,56 @@ function addToPage(listOfHikes, id) {
     var container = document.getElementById("container");
     container.appendChild(paragraph);
   }*/
-
+  var theDiv = document.createElement("div");
   var paragraph = document.createElement("p");
   var paragraph2 = document.createElement("p");
   var paragraph3 = document.createElement("p");
   var paragraph4 = document.createElement("p");
+  var favorite = document.createElement("button");
   var image = document.createElement("img");
-  image.class = "formatImg";
-  paragraph.class = "result";
+
+  favorite.className = "theButton";
+  theDiv.className = "divThing";
+
+
+  /*paragraph.class = "result";
   paragraph2.class = "result";
   paragraph3.class = "result";
-  paragraph4.class = "result";
+  paragraph4.class = "result";*/
+  favorite.innerHTML = "Add to My Hikes"
   paragraph.innerHTML = "Name of Hike: " + listOfHikes[id].name;
   paragraph2.innerHTML = "Length of Hike: " + listOfHikes[id].length;
   paragraph3.innerHTML = "Address of Hike: " + listOfHikes[id].address;
   paragraph4.innerHTML = "Elevation of Hike: " + listOfHikes[id].elevation;
   image.src = listOfHikes[id].pic;
   image.setAttribute("width","220px");
+  favorite.setAttribute("display", "inline-block");
+  favorite.setAttribute("width", "250px");
+
+
+/*  padding: 15px 18px;
+  color: white;
+  border: 1.5px solid white;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: "Comfortaa", cursive;
+  margin: 4px 2px;*/
+  /*theDiv.setAttribute("font-family", "Comfortaa", cursive);
+  theDiv.setAttribute("color", "white");*/
+
+
   console.log(listOfHikes[id].pic)
   var container = document.getElementById("container");
-  container.appendChild(paragraph);
-  container.appendChild(paragraph2);
-  container.appendChild(paragraph3);
-  container.appendChild(paragraph4);
-  container.appendChild(image);
+  theDiv.appendChild(paragraph);
+  theDiv.appendChild(paragraph2);
+  theDiv.appendChild(paragraph3);
+  theDiv.appendChild(paragraph4);
+  theDiv.appendChild(image);
+  theDiv.appendChild(favorite);
+
+  container.appendChild(theDiv);
 }

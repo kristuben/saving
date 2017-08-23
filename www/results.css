@@ -14,7 +14,7 @@ h1 {
 }
 
 
-#element{
+/*#element{
   margin: 30px 135px;
   width:1000px;
   color:white;
@@ -27,7 +27,7 @@ h1 {
   -moz-opacity:.8;
   opacity:.8;
   border-radius: 15px;
-}
+}*/
 
 ul {
   font-family: "Comfortaa", cursive;
@@ -63,7 +63,29 @@ li a:hover {
 li a:active {
   background-color: rgba(218, 189, 253, 0.4);
 }
+.theButton {
+  display: inline-block;
+  width: 180px;
+  padding: 15px 18px;
+  color: white;
+  border: 1.5px solid white;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: "Comfortaa", cursive;
+  margin: 4px 2px;
 
+}
+.theButton:hover,
+.theButton:active {
+  background-color: rgba(95, 126, 253, 0.4);
+  border-color: rgba(95, 126, 253, 0.2);
+  transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
+  color: white;
+}
 
 .button {
   display: inline-block;
@@ -89,7 +111,35 @@ li a:active {
   color: white;
 }
 
+.divThing {
+  margin: 30px 135px;
+  width:1000px;
+  color:white;
+  text-align: left;
+  font-family: "Comfortaa", cursive;
+  background-color: rgb(177,156,249);
+  border:white 1px solid;
+  padding:24px;
+  filter:alpha(opacity = 80);
+  -moz-opacity:.8;
+  opacity:.8;
+  border-radius: 15px;
+}
+
 #container{
+  font-family: "Comfortaa", cursive;
+  color: white;
+}
+
+#first{
+  font-family: "Comfortaa", cursive;
+  color: white;
+}
+#second{
+  font-family: "Comfortaa", cursive;
+  color: white;
+}
+#third{
   font-family: "Comfortaa", cursive;
   color: white;
 }
