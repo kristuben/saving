@@ -65,8 +65,9 @@ li a:active {
 }
 .theButton {
   display: inline-block;
+  background-color: transparent;
   width: 180px;
-  padding: 15px 18px;
+  padding: 15px 19px;
   color: white;
   border: 1.5px solid white;
   text-align: center;
@@ -74,7 +75,7 @@ li a:active {
   text-decoration: none;
   transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
   border-radius: 20px;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Comfortaa", cursive;
   margin: 4px 2px;
 
@@ -89,6 +90,7 @@ li a:active {
 
 .button {
   display: inline-block;
+  background-color: transparent;
   width: 180px;
   padding: 15px 18px;
   color: white;
@@ -98,7 +100,7 @@ li a:active {
   text-decoration: none;
   transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
   border-radius: 20px;
-  font-size: 20px;
+  font-size: 10px;
   font-family: "Comfortaa", cursive;
   margin: 4px 2px;
 }
@@ -117,12 +119,12 @@ li a:active {
   color:white;
   text-align: left;
   font-family: "Comfortaa", cursive;
-  background-color: rgb(177,156,249);
+  background-color: rgba(177,156,249,.85);
   border:white 1px solid;
   padding:24px;
-  filter:alpha(opacity = 80);
+  /*filter:alpha(opacity = 80);
   -moz-opacity:.8;
-  opacity:.8;
+  opacity:.8;*/
   border-radius: 15px;
 }
 

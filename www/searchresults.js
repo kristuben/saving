@@ -92,7 +92,7 @@ function addToPage(listOfHikes, id) {
   favorite.innerHTML = "Add to My Hikes"
   favorite.onclick = function(){
     console.log(username);
-    database.ref("users/" + username + "/favorites/" + id).set({theValue : "True"});
+    database.ref("users/" + username + "/favorites/" + id).set({theName : listOfHikes[id].name});
     console.log("added");
     favorite.innerHTML = "ADDED";
   };
@@ -100,10 +100,16 @@ function addToPage(listOfHikes, id) {
   paragraph2.innerHTML = "Length of Hike: " + listOfHikes[id].length;
   paragraph3.innerHTML = "Address of Hike: " + listOfHikes[id].address;
   paragraph4.innerHTML = "Elevation of Hike: " + listOfHikes[id].elevation;
+  paragraph.setAttribute("style","position:relative;top:-15px;")
+  paragraph2.setAttribute("style","position:relative;top:-15px;")
+  paragraph3.setAttribute("style","position:relative;top:-15px;")
+  paragraph4.setAttribute("style","position:relative;top:-15px;")
   image.src = listOfHikes[id].pic;
   image.setAttribute("width","220px");
+  image.setAttribute("style","position:relative;left:775px;top:-150px;");
   favorite.setAttribute("display", "inline-block");
   favorite.setAttribute("width", "250px");
+  favorite.setAttribute("style","position:relative;left:595px;top:-100px;");
 
 
 /*  padding: 15px 18px;
