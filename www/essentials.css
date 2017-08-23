@@ -14,17 +14,17 @@ h1 {
 }
 
 #element{
-  margin: 50px 135px;
-  width:1000px;
+  margin: 50px 390px;
+  width:500px;
   color:white;
-  text-align: left;
+  text-align: center;
   font-family: "Comfortaa", cursive;
   background-color: rgb(177,156,249);
   border:white 1px solid;
   padding:24px;
-  filter:alpha(opacity = 80);
+  /*filter:alpha(opacity = 80);
   -moz-opacity:.8;
-  opacity:.8;
+  opacity:.8;*/
   border-radius: 15px;
 }
 
