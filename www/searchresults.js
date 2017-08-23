@@ -79,6 +79,8 @@ function addToPage(listOfHikes, id) {
   var favorite = document.createElement("button");
   var image = document.createElement("img");
 
+  var username = sessionStorage.username;
+
   favorite.className = "theButton";
   theDiv.className = "divThing";
 
@@ -88,6 +90,12 @@ function addToPage(listOfHikes, id) {
   paragraph3.class = "result";
   paragraph4.class = "result";*/
   favorite.innerHTML = "Add to My Hikes"
+  favorite.onclick = function(){
+    console.log(username);
+    database.ref("users/" + username + "/favorites/" + id).set({theValue : "True"});
+    console.log("added");
+    favorite.innerHTML = "ADDED";
+  };
   paragraph.innerHTML = "Name of Hike: " + listOfHikes[id].name;
   paragraph2.innerHTML = "Length of Hike: " + listOfHikes[id].length;
   paragraph3.innerHTML = "Address of Hike: " + listOfHikes[id].address;
@@ -123,4 +131,10 @@ function addToPage(listOfHikes, id) {
   theDiv.appendChild(favorite);
 
   container.appendChild(theDiv);
+
+   /*
+   if they click the button {
+      add it to favorites under user
+    }
+    */
 }
