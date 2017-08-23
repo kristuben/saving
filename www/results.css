@@ -74,7 +74,7 @@ li a:active {
   outline: none;
   text-decoration: none;
   transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
-  border-radius: 20px;
+  border-radius: 15px;
   font-size: 16px;
   font-family: "Comfortaa", cursive;
   margin: 4px 2px;
@@ -82,8 +82,8 @@ li a:active {
 }
 .theButton:hover,
 .theButton:active {
-  background-color: rgba(95, 126, 253, 0.4);
-  border-color: rgba(95, 126, 253, 0.2);
+  background-color: rgba(177,156,249,.8);
+  border-color: rgba(177,156,249,.8);
   transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
   color: white;
 }
@@ -121,7 +121,7 @@ li a:active {
   font-family: "Comfortaa", cursive;
   background-color: rgba(177,156,249,.85);
   border:white 1px solid;
-  padding:24px;
+  padding:20px;
   /*filter:alpha(opacity = 80);
   -moz-opacity:.8;
   opacity:.8;*/
