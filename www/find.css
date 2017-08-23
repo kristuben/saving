@@ -74,8 +74,8 @@ li a:active {
 .button {
   background-color:transparent;
   display: inline-block;
-  width: 100px;
-  padding: 10px 12px;
+  width: 110px;
+  padding: 11px 12px;
   color: white;
   border: 1.5px solid white;
   text-align: center;
@@ -83,7 +83,7 @@ li a:active {
   text-decoration: none;
   transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Comfortaa", cursive;
   margin: 4px 2px;
 }
