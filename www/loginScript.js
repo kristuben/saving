@@ -38,7 +38,7 @@
       if (json != null) {
         var password = snapshot.val().password;
         if (password === pass){
-          toBeDisplayed = "SUCCESS";
+          //toBeDisplayed = "SUCCESS";
           sessionStorage.setItem("username", key);
           window.location.href = "home.html";
         } else {
